@@ -1,10 +1,10 @@
-import LocalStorageHandler from "./local-storage-handler.js"
-import DocsDetailsHandler from "./docs-details-handler.js"
+import LocalStorageHandler from "./modules/local-storage-handler.js"
+import DocsDetailsHandler from "./modules/docs-details-handler.js"
 
 const tabBtns = document.querySelectorAll(".tab-btn")
 const markdownTextarea = document.querySelector(".markdown-textarea")
 
-class MarkdownPreviewer{
+class MarkdownPreviewer {
     static init() {
         markdownTextarea.value = LocalStorageHandler.getData()
         MarkdownPreviewer.displayCompiledHtml()

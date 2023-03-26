@@ -1,6 +1,6 @@
 import { encodeHtmlEntities } from "./helper-functions.js"
 
-class DocsDetailsHandler{
+class DocsDetailsHandler {
     static async getDataFromAPI() {
         const response = await fetch("./data.json")
         const JSON_RESPONSE = await response.json()
